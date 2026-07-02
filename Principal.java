@@ -73,6 +73,13 @@ public class Principal {
                     break;
                 case 7:
                     System.out.println("Buscar por ID");
+                    System.out.println("Ingresa un id del producto: ");
+                    Integer id=sc.nextInt();
+                    Articulo art =bodega.getLista().get(id-1);
+                    System.out.println("Articulo: ");
+                    System.out.println("nombre: "+art.getNombre());
+                    System.out.println("codigo de barras: "+ art.getCodigoBarras());
+                    System.out.println("existencia: "+ art.getExistencia());
                     break;
                 case 0:
                     System.out.println("Saliendo...");
