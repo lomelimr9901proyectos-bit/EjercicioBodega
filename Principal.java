@@ -47,6 +47,11 @@ public class Principal {
                     break;
                 case 4:
                     System.out.println("Eliminar un producto de la bodega");
+                    System.out.println("Ingrese el ID del producto a eliminar:");
+                    bodega.getLista().forEach(articulo1 -> System.out.println("\nID: "+articulo1.getId()+"\nCodigo de barras: "+articulo1.getCodigoBarras()+"\nNombre: "+articulo1.getNombre()+"\nCantidad: "+articulo1.getExistencia()+"\nPrecio: "+articulo1.getPrecio()));
+                    Integer idEliminar = sc.nextInt();
+                    bodega.eliminar(bodega.getLista().get(idEliminar - 1));
+
                     break;
                 case 5:
                     System.out.println("Buscar un producto en la bodega mediante nombre");
