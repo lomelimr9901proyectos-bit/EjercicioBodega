@@ -17,4 +17,5 @@ public class Bodega <T> {
    public void eliminar(T objeto){
        bodega.remove(objeto);
    }
+
 }

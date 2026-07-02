@@ -40,10 +40,24 @@ public class Principal {
                     break;
                 case 2:
                     System.out.println("Editar un producto de la bodega");
+<<<<<<< HEAD
                    
+=======
+                     System.out.println("Ingresa el Id del producto a editar");
+                    Integer idBuscar=sc.nextInt();
+                    sc.nextLine();
+                    Articulo articuloEditar=bodega.getLista().get(idBuscar-1);
+                    System.out.println("Ingresa el nombre");
+                    articuloEditar.setNombre(sc.nextLine());
+                    System.out.println("Ingresa la cantidad");
+                    articuloEditar.setExistencia(sc.nextInt());
+                    System.out.println("Ingresa el precio");
+                    articuloEditar.setPrecio(sc.nextDouble());
+>>>>>>> bcb64d958330f80f05e7f205408b805e429369ce
                     break;
                 case 3:
                     System.out.println("Buscar un producto en la bodega mediante codigo de barras");
+                    System.out.println("Metodo asignado a Mario");
                     break;
                 case 4:
                     System.out.println("Eliminar un producto de la bodega");
@@ -62,6 +76,14 @@ public class Principal {
                     break;
                 case 7:
                     System.out.println("Buscar por ID");
+                    System.out.println("Ingresa un id del producto: ");
+                    Integer id=sc.nextInt();
+                    Articulo art =bodega.getLista().get(id-1);
+                    System.out.println("Articulo: ");
+                    System.out.println("Nombre: "+art.getNombre());
+                    System.out.println("Codigo de barras: "+ art.getCodigoBarras());
+                    System.out.println("Existencia: "+ art.getExistencia());
+
                     break;
                 case 0:
                     System.out.println("Saliendo...");
