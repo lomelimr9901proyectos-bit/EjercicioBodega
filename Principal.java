@@ -40,6 +40,17 @@ public class Principal {
                     break;
                 case 2:
                     System.out.println("Editar un producto de la bodega");
+                     System.out.println("Ingresa el Id del producto a editar");
+                    Integer idBuscar=sc.nextInt();
+                    sc.nextLine();
+                    Articulo articuloEditar=bodega.getLista().get(idBuscar-1);
+                    System.out.println("Ingresa el nombre");
+                    articuloEditar.setNombre(sc.nextLine());
+                    System.out.println("Ingresa la cantidad");
+                    articuloEditar.setExistencia(sc.nextInt());
+                    System.out.println("Ingresa el precio");
+                    articuloEditar.setPrecio(sc.nextDouble());
+
 
                     break;
                 case 3:
