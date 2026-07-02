@@ -50,11 +50,10 @@ public class Principal {
                     articuloEditar.setExistencia(sc.nextInt());
                     System.out.println("Ingresa el precio");
                     articuloEditar.setPrecio(sc.nextDouble());
-
-
                     break;
                 case 3:
                     System.out.println("Buscar un producto en la bodega mediante codigo de barras");
+                    System.out.println("Metodo asignado a Mario");
                     break;
                 case 4:
                     System.out.println("Eliminar un producto de la bodega");
